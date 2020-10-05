@@ -1,0 +1,41 @@
+{%include "NavTest.html"%}
+{% block body %}
+<body>
+    
+ <div class="container">
+    <h2>Hi, I'm</h2>
+    <h2> <p>Vaishnavi Singh</p></h2>
+    <h2>| Web Developer |</h2>
+    <h5>\ Front-end developer \</h5>
+    <h5>\ Full Stack developer \</h5>
+    <br />
+    <a class="btn-large" href="/contact">Contact Me!</a>
+    
+</div>
+
+</body>
+ {% endblock %}
+ <style>
+    body{
+        background: #212121;
+        color: wheat;
+        overflow: hidden;
+    }
+    p{
+        color: #00897b;
+    }
+    .btn-large{
+        background-color: #00897b;
+        color: black;
+    }
+    .container{
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-20%,-20%);
+        overflow: hidden;
+    }
+    h5{
+        padding-left: 2%;
+    }
+</style>

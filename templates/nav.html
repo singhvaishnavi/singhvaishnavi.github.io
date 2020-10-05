@@ -1,0 +1,121 @@
+<!--
+{%include "index.html"%}
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="/">
+                    <span class="icon">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/about">
+                    <span class="icon">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </span>
+                    <span class="title">About</span>
+                </a>
+            </li>
+            <li>
+                <a href="/skills">
+                    <span class="icon">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                    </span>
+                    <span class="title">Skills</span>
+                </a>
+            </li>
+            <li>
+                <a href="/work">
+                    <span class="icon">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    </span>
+                    <span class="title">Work</span>
+                </a>
+            </li>
+            <li>
+                <a href="/contact">
+                    <span class="icon">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </span>
+                    <span class="title">Contact</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+   
+    .nav{
+        min-height: 100vh;
+        background: #150019;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    } 
+
+<style>
+    
+    .navigation{
+        position: fixed ;
+        width: 60px ;
+        height: 100%;
+        background: #212121;
+        justify-content: center;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .navigation:hover{
+        width: 200px;
+
+    }
+    .navigation ul{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .navigation ul li{
+        position: relative;
+        width: 100%;
+        list-style: none;
+    }
+    .navigation ul li:hover{
+        background: #00897b ;
+    }
+    .navigation ul li a{
+        position: relative;
+        display: block;
+        width: 100%;
+        display: flex;
+        text-decoration: none;
+        color: #fff;
+    }
+    .navigation ul li a .icon{
+        position: relative;
+        display: block;
+        min-width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+    }
+    .navigation ul li a .icon .fa{
+        font-size: 24px;
+        color: #0ace9d;
+    }
+    .navigation ul li a .icon .fa:hover{
+        color: #fff;
+    }
+    .navigation ul li a .title{
+        position: relative;
+        display: block;
+        padding: 0 10px;
+        height: 60px;
+        line-height: 60px;
+        text-align: start;
+        white-space: nowrap;
+    }
+</style>
+-->

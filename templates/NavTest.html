@@ -1,0 +1,71 @@
+{%include "index.html"%}
+<body>
+    <div class="side-menu">
+
+        <a href="/"><i class="fa fa-home" aria-hidden="true"></i><span> Home </span></a>
+        <a href="/about"><i class="fa fa-user" aria-hidden="true"></i><span> About </span></a>
+        <a href="/skills"><i class="fa fa-cog" aria-hidden="true"></i><span> Skills </span></a>
+        <a href="/project"><i class="fa fa-briefcase" aria-hidden="true"></i><span> Projects </span></a>
+        <a href="/contact"><i class="fa fa-envelope" aria-hidden="true"></i><span> Contact </span></a>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: columns;
+    box-sizing: border-box;
+}
+.side-menu{
+    position: fixed;
+    background: #212121;
+    width: 150px;
+    height: auto;
+    top: 15%;
+    margin-top: 80px;
+}
+.side-menu a{
+    display: block;
+    color: wheat;
+    line-height: 60px;
+    transition: 0.5s;
+}
+.side-menu a:hover{
+    background: #00897b;
+}
+.side-menu a span{
+    font-size: 20px;
+    color: wheat;
+    padding-left: 20px;
+}
+.side-menu a i{
+    font-size: 20px;
+    color: wheat;
+    padding-left: 20px;
+}
+@media (max-width: 850px) {
+    
+
+    .side-menu a span{
+        display: none;
+    }
+    .side-menu{
+        width: 50px;
+    }
+
+    .side-menu a i{
+        display: block;
+        line-height: 100px;
+        text-align: center;
+        margin-left: 0;
+        padding-left: 0px;
+        font-size: 25px;
+
+    }
+
+}
+
+
+</style>

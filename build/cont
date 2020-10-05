@@ -1,0 +1,291 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://use.fontawesome.com/979a717f75.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Vaishnavi Singh</title>
+</head>
+
+</html>
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://use.fontawesome.com/979a717f75.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Vaishnavi Singh</title>
+</head>
+
+</html>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="/">
+                    <span class="icon">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="/about">
+                    <span class="icon">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </span>
+                    <span class="title">About</span>
+                </a>
+            </li>
+            <li>
+                <a href="/skills">
+                    <span class="icon">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                    </span>
+                    <span class="title">Skills</span>
+                </a>
+            </li>
+            <li>
+                <a href="/work">
+                    <span class="icon">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    </span>
+                    <span class="title">Work</span>
+                </a>
+            </li>
+            <li>
+                <a href="/contact">
+                    <span class="icon">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </span>
+                    <span class="title">Contact</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+   
+    .nav{
+        min-height: 100vh;
+        background: #150019;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    } 
+
+<style>
+    
+    .navigation{
+        position: fixed ;
+        width: 60px ;
+        height: 100%;
+        background: #212121;
+        justify-content: center;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .navigation:hover{
+        width: 200px;
+
+    }
+    .navigation ul{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .navigation ul li{
+        position: relative;
+        width: 100%;
+        list-style: none;
+    }
+    .navigation ul li:hover{
+        background: #00897b ;
+    }
+    .navigation ul li a{
+        position: relative;
+        display: block;
+        width: 100%;
+        display: flex;
+        text-decoration: none;
+        color: #fff;
+    }
+    .navigation ul li a .icon{
+        position: relative;
+        display: block;
+        min-width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+    }
+    .navigation ul li a .icon .fa{
+        font-size: 24px;
+        color: #0ace9d;
+    }
+    .navigation ul li a .icon .fa:hover{
+        color: #fff;
+    }
+    .navigation ul li a .title{
+        position: relative;
+        display: block;
+        padding: 0 10px;
+        height: 60px;
+        line-height: 60px;
+        text-align: start;
+        white-space: nowrap;
+    }
+</style>
+-->
+
+<body>
+    <div class="container">
+        <h1>Contact me</h1>
+        <form action="post">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="name" type="text">
+                    <label for="name">Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="email" type="email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <textarea id="message" class="materialize-textarea"></textarea>
+                          <label for="message">Message</label>
+                        </div>
+                      </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <a href="#submission" class="btn modal-trigger">Submit</a>
+                    <div class="modal" id="submission">
+                        <div class="modal-content">
+                            <h4>Got it!</h4>
+                            <p>I have recieved your message and will try to revert back as soon as possible</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="/" class="btn">Okay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+        <p>You can catch me on:</p>
+        <div class="row">
+            <div class="col s1">
+                <a href="https://www.linkedin.com/in/vaishnavi-singh/">
+                    <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col s1">
+                <a href="https://github.com/singhvaishnavi">
+                    <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col s1">
+                <a href="https://angel.co/u/vaishnavisingh">
+                    <i class="fa fa-angellist fa-3x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="col s1">
+                <a href="https://twitter.com/Vaishnavi1509">
+                    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    
+    </div>
+</body>
+<style>
+    body{
+        background: #212121;
+        color: #fff;
+    }
+    .fa{
+        color: #0ace9d;
+    }
+    .fa:hover{
+        color: #fff;
+    }
+</style>
+
+<script>
+    document.getElementById("name").onclick = function() {
+    this.style.color = '#fff';
+}
+document.getElementById("email").onclick = function() {
+    this.style.color = '#fff';
+}
+document.getElementById("message").onclick = function() {
+    this.style.color = '#fff';
+}
+document.getElementById("name").onfocus = function() {
+    this.style.color = '#fff';
+}
+document.getElementById("email").onfocus = function() {
+    this.style.color = '#fff';
+}
+document.getElementById("message").onfocus = function() {
+    this.style.color = '#fff';
+}
+//document.getElementById("btn").onclick = function() {
+//    alert("Thank you for your message. I will try to get back to you as soon as possible");
+//}
+$(document).ready(function(){
+    $('.modal').modal();
+});
+
+</script>
+<style>
+    body{
+        background: #212121;
+        color: #fff;
+    }
+    .fa{
+        color: #fff;
+    }
+    .btn{
+         background: #00897b;
+    }
+    .btn:hover{
+        background:#0ace9d;
+    }
+    .modal{
+        background: #212121;
+    }
+    .modal .modal-footer{
+        margin: 20;
+        padding: 20;
+        background: #212121;
+    }
+    .modal .modal-content p{
+        font-size: large;
+    }
+    
+ </style>
+ 
+-->
