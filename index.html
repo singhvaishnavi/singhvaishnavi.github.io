@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://use.fontawesome.com/979a717f75.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>Vaishnavi Singh</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!--
     <div class="side-menu">
         <a href="#home"><i class="fa fa-home" aria-hidden="true"></i><span> Home </span></a>
         <a href="#about"><i class="fa fa-user" aria-hidden="true"></i><span> About </span></a>
@@ -22,19 +29,39 @@
         <a href="#projects"><i class="fa fa-briefcase" aria-hidden="true"></i><span> Projects </span></a>
         <a href="#contact"><i class="fa fa-envelope" aria-hidden="true"></i><span> Contact </span></a>
     </div>
+    -->
     <section class="home" id="home">
-        <div class="container">
-            <h2>Hi, I'm</h2>
-            <h2 class="name"> Vaishnavi Singh</h2>
-            <h2>| Web Developer |</h2>
-            <h5>\ Front-end developer \</h5>
-            <h5>\ Full Stack developer \</h5>
-            <br />
-            <a class="btn-large" href="#contact">Contact Me!</a>  
+      <div class="container">
+        <h2>Hi, I'm</h2>
+        <h2 class="name">Vaishnavi Singh</h2>
+        <h2>| Web Developer |</h2>
+        <br />
+        <a class="btn-large" href="mailto:vaishnavisingh@tutamail.com"
+          >Email Me</a
+        >
+        <br /><br /><br />
+        <p>You can also catch me here</p>
+        <br />
+        <div class="row">
+          <div class="col s1">
+            <a href="https://www.linkedin.com/in/vaishnavi-singh/">
+              <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="col s1">
+            <a href="https://github.com/singhvaishnavi">
+              <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="col s1">
+            <a href="https://angel.co/u/vaishnavisingh">
+              <i class="fa fa-angellist fa-3x" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
-        
+      </div>
     </section>
-    
+    <!--
     <section class="about" id="about">
         <div class="container">
             <h1>About</h1>
@@ -186,17 +213,48 @@
         
         </div>
     </section>
-
-</body>
+-->
+  </body>
 </html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <style>
-*{
+  * {
     padding: 0;
     margin: 0;
     overflow: hidden;
-}
-/*Side menu */
+    font-family: "Roboto Mono", monospace, serif;
+  }
+  body {
+    background: white;
+    color: black;
+  }
+  /*Home*/
+  .home {
+    height: 100vh;
+  }
+  .home .container .name {
+    color: #00897b;
+  }
+  .home .btn-large {
+    background-color: #00897b;
+    color: white;
+    font-size: large;
+    font-weight: 400px;
+  }
+  .home .container {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-20%, -20%);
+  }
+  .fa {
+    color: #00897b;
+  }
+  h5 {
+    padding-left: 2%;
+  }
+  /*Side menu */
+  /*
 .side-menu{
     position: fixed;
     background: #212121;
@@ -224,10 +282,25 @@
     color: wheat;
     padding-left: 20px;
 }
-@media (max-width: 850px) {
-    *{
-        overflow: visible;
+*/
+  @media (max-width: 850px) {
+    * {
+      overflow: visible;
     }
+    .home {
+      height: 100vh;
+      width: 100vh;
+    }
+    .home .container {
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      transform: translate(-20%, -20%);
+    }
+    .fa {
+      color: #00897b;
+    }
+    /*
     .side-menu a span{
         display: none;
     }
@@ -244,10 +317,7 @@
         font-size: 25px;
 
     }
-    .home{
-        height: 100vh;
-        width: 100vh;
-    }
+    
     .skills{
         height: 100vh;
         width: 100vh
@@ -260,34 +330,11 @@
         height: 100vh;
         width: 100vh
     }
+    */
+  }
 
-}
-body{
-       background: #212121;
-       color: wheat;
-   }
-   /*Home*/
-    .home{
-        height: 100vh;
-        box-sizing: border-box;
-    }
-    .home .container .name{
-        color: #00897b;
-    }
-    .home .btn-large{
-        background-color: #00897b;
-        color: black;
-    }
-    .home .container{
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        transform: translate(-20%,-20%);
-    }
-    h5{
-        padding-left: 2%;
-    }
-/*About*/
+  /*About*/
+  /*
     .about{
         height: 100vh;
         box-sizing: border-box;
@@ -305,8 +352,9 @@ body{
         left: 30%;
         transform: translate(-20%,-20%);
     }
-    /*Skills*/
-    
+    */
+  /*Skills*/
+  /*
    .skills{
        height: 100vh;
        box-sizing: border-box;
@@ -320,7 +368,9 @@ body{
         left: 30%;
         transform: translate(-20%,-20%);
     }
-    /*Projects*/
+    */
+  /*Projects*/
+  /*
     .projects{
        height: 100vh;
        box-sizing: border-box;
@@ -339,7 +389,9 @@ body{
         right: 10%;
         transform: translate(-20%,-20%);
    }
-   /*Contact*/
+   */
+  /*Contact*/
+  /*
    .contact{
        height: 100vh;
        box-sizing: border-box;
@@ -360,12 +412,11 @@ body{
     .contact p{
         font-size: 20px;
     }
-
-    /* width */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-
-
+*/
+  /* width */
+  /*
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  */
 </style>
